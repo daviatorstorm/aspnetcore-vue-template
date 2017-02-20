@@ -45,8 +45,6 @@ namespace MvcApp
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            // Task.Run(() => BundlerCore.BundlerCore.Run());
-
             app.UseBundler();
 
             app.UseStaticFiles();

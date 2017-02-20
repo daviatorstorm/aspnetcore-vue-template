@@ -5,12 +5,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MvcApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/tether/dist/css/tether.min.css" />
+    <link rel="stylesheet" href="~/styles/core.css">
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/tether/dist/js/tether.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     @RenderBody()
 
     <script src="~/lib/vue/dist/vue.js"></script>
+    <script src="~/lib/vue-resource/dist/vue-resource.js"></script>
+    <script src="~/lib/vue-router/dist/vue-router.js"></script>
+
     <script src="~/dist/bundle.js"></script>
 </body>
 

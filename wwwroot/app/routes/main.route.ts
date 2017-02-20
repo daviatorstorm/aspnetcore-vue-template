@@ -1,21 +1,24 @@
-/// <reference path="utils/utils.ts" />
-namespace App.Components {
-    @Component({
-        name: 'app',
+/// <reference path="../utils/utils.ts" />
+namespace App.Routes {
+    @Route({
+        path:'/',
+        name: 'main-route',
         template: `
         <div>
             <h1>First vue app!!!</h1>
             <p>{{message}}</p>
-            <button v-on:click="click">Click me</button>
+            <button @click="click">Click me</button>
+            <button @click="someMethod">Request</button>
             <ul v-if="arr.length > 0">
                 <li v-for="item in arr">{{item}}</li>
             </ul>
         </div>
         `
     })
-    export class App {
+    export class MainRoute {
         message = 'Some message';;
         arr = [];
+        $http: any;
 
         click() {
             this.arr.push('value 1');
@@ -29,6 +32,12 @@ namespace App.Components {
                 this.arr.push('value 7');
                 this.arr.push('value 8');
             }, 2000);
+        }
+
+        someMethod() {
+            this.$http.post('/flats').then(res => {
+                console.log('responce');
+            }, err => console.log(err));
         }
     }
 }
