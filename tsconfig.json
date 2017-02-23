@@ -7,9 +7,10 @@
       "es2015",
       "es2015.promise",
       "dom"
-    ]
+    ],
+    "experimentalDecorators": true
   },
   "include": [
-    "wwwroot/**/*.ts"
+    "wwwroot/app/**/*.ts"
   ]
 }
