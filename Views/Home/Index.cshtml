@@ -1,1 +1,7 @@
-﻿<div id="main"></div>
+@model object
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div asp-prerender-module="wwwroot/main" asp-prerender-data="Model" id="main"></div>
