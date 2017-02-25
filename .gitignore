@@ -245,3 +245,5 @@ _Pvt_Extensions
 .fake/
 
 lib/
+wwwroot/app/**/*.js
+wwwroot/app/**/*.js.map
