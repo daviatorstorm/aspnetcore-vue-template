@@ -45,7 +45,7 @@ namespace MvcApp
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            app.UseBundler();
+            // app.UseBundler();
 
             app.UseStaticFiles();
 

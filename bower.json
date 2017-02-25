@@ -8,6 +8,8 @@
     "jquery-validation-unobtrusive": "3.2.6",
     "vue": "latest",
     "vue-router": "^2.2.1",
-    "vue-resource": "^1.2.0"
+    "vue-resource": "^1.2.0",
+    "requirejs": "^2.3.3",
+    "text": "requirejs/text#^2.0.15"
   }
 }

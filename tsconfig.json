@@ -1,18 +1,18 @@
 {
     "compileOnSave": true,
     "include": [
-        "wwwroot/app/**.*.ts",
-        "wwwroot/main.ts"
+        "wwwroot/app/**/*"
     ],
     "compilerOptions": {
         "target": "es5",
         "module": "amd",
+        "moduleResolution": "node",
         "sourceMap": true,
-        "outFile": "wwwroot/dist/bundle.js",
         "experimentalDecorators": true,
         "lib": [
             "dom",
             "es2015"
-        ]
+        ],
+        "baseUrl": "wwwroot/lib"
     }
 }
